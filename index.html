@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header dengan Greeting -->
+        <header class="greeting-section">
+            <div class="time-display" id="timeDisplay"></div>
+            <div class="date-display" id="dateDisplay"></div>
+            <h1 class="greeting" id="greeting"></h1>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        </header>
+
+        <!-- Focus Timer & To-Do List Grid -->
+        <div class="main-grid">
+            <!-- Focus Timer -->
+            <section class="timer-section">
+                <h2>Focus Timer</h2>
+                <div class="timer-display" id="timerDisplay">25:00</div>
+                <div class="timer-controls">
+                    <button id="startBtn">Start</button>
+                    <button id="stopBtn">Stop</button>
+                    <button id="resetBtn">Reset</button>
+                </div>
+            </section>
+
+            <!-- To-Do List -->
+            <section class="todo-section">
+                <h2>Daftar Tugas</h2>
+                <div class="todo-input-group">
+                    <input type="text" id="todoInput" placeholder="Tambah tugas baru...">
+                    <button id="addTodoBtn">Tambah</button>
+                </div>
+                <ul class="todo-list" id="todoList"></ul>
+            </section>
+        </div>
+
+        <!-- Quick Links -->
+        <section class="links-section">
+            <h2>Tautan Cepat</h2>
+            <div class="link-input-group">
+                <input type="text" id="linkName" placeholder="Nama">
+                <input type="url" id="linkUrl" placeholder="https://...">
+                <button id="addLinkBtn">Tambah</button>
+            </div>
+            <div class="links-grid" id="linksGrid"></div>
+        </section>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
